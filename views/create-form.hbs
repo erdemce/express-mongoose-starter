@@ -1,0 +1,16 @@
+<form method="POST" action="/todos/create">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Name</label>
+    <input name="myTodo" type="text" class="form-control" id="exampleInputEmail1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputDescription1" class="form-label">Description</label>
+    <input name="myDescription" type="text" class="form-control" id="exampleInputDescription1">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{{!-- Conditionally render if you want --}}
+{{#if dataAdded}}
+<p>Data was added successfully</p>
+{{/if}}
